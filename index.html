@@ -1,33 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Contact Form</title>
-</head>
-<header>
-    <div class="logo">
-        <h1>Logo</h1>
-    </div>
-    <div class="links">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>E<span>XAM</span>PLE</h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">example@email.com</a></li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Soluciones</a>
+          </li>
+          <li>
+            <a href="#">example@email.com</a>
+          </li>
         </ul>
-    </div>
-</header>
-<body>
-    <div class="a">
-        <h1>ExampleTitle</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora ex consequuntur ipsa quae, sit earum fuga ullam explicabo illum culpa porro voluptas vero excepturi, nam est rerum vitae iste.</p>
-        <button><a href="/form.html">Contact us</a></button>
-        <button>About us</button>
-    </div>
-    <div class="b">
-        <img src="" alt="">
-    </div>
-</body>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Ayudarte con tu dolor es <span>nuestra prioridad</span></h2>
+        <p>
+            Alguna vez te sientes solo en este mundo y no sabes que hacer, la pasas mucho tiempo
+            en tu dispositivo portatil y aun te sientes vacio, te hacen faltas tus amigos y no
+            tienes con quien charlar de tus problema, por eso estamos nosotros para hablar de tu
+            pertubacion interna que te causa dolor.
+        </p>
+        <ul>
+          <li>
+            <a href="#" id="contact">Contactanos</a>
+          </li>
+          <li>
+            <a href="#" class="link">Conoce mas</a>
+          </li>
+        </ul>
+      </section>
+      <picture>
+        <img src="img/pexels-alex-green-5700184-2.jpg" alt="" />
+      </picture>
+    </main>
+
+    <form id="contact-form">
+      <label for="title"><span id="send">Por si necesitas ayuda</span><span id="btn-end">X</span></label>
+      <section>
+      <input type="text" id="name" name="name" required placeholder="Problema:" />
+      <textarea id="message" name="message" required placeholder="Descripcion:" ></textarea>
+      <button id="btn" type="submit">Enviar problema</button>
+      </section>
+      <picture><img  id="img" src="img/work.webp" alt=""></picture>
+    </form>
+
+    <script src="/js/script.js"></script>
+  </body>
 </html>
